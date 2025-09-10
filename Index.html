@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSpare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="MyCompany Logo" class="logo-img">
+            <span class="logo-text">TechSpare</span>
+        </div>
+        <nav class="nav">
+            <button onclick="scrollToSection('home')">Home</button>
+            <button onclick="scrollToSection('about')">Our Profile</button>
+            <button onclick="scrollToSection('projects')">Projects</button>
+            <button onclick="scrollToSection('contact')">Message Us</button>
+        </nav>
+    </header>
+
+<section class="welcome-section" id="home">
+  <div class="banner-content">
+    <div class="banner-text">
+      <h1>Hi Bagas, Welcome to Our Website</h1>
+      <p>Kami adalah perusahaan teknologi yang berfokus pada solusi digital modern untuk membantu bisnis berkembang lebih cepat.</p>
+    </div>
+    <div class="banner-image">
+      <img src="banner.png" alt="Banner Illustration">
+    </div>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <h2>About Us</h2>
+  <p>
+    Kami adalah perusahaan teknologi yang berfokus pada pengembangan solusi digital
+    inovatif. Dengan tim profesional yang berpengalaman, kami membantu bisnis
+    beradaptasi dengan era digital melalui layanan pembuatan website, aplikasi,
+    dan strategi pemasaran online.
+  </p>
+
+  <div class="about-cards">
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>Menciptakan solusi digital yang membantu bisnis berkembang lebih cepat dan efisien.</p>
+    </div>
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>Menjadi mitra terpercaya dalam transformasi digital di seluruh Indonesia.</p>
+    </div>
+    <div class="card">
+      <h3>Our Value</h3>
+      <p>Kami menjunjung tinggi kualitas, kepercayaan, dan inovasi dalam setiap proyek.</p>
+    </div>
+  </div>
+</section>
+
+<section class="projects-section" id="projects">
+  <h2>Our Projects</h2>
+  <p>Berikut beberapa proyek teknologi yang telah kami kerjakan untuk membantu klien berkembang di era digital.</p>
+
+  <div class="project-cards">
+    <div class="project-card">
+      <img src="ecommerce.jpg" alt="Project 1">
+      <h3>E-Commerce Website</h3>
+      <p>Pengembangan website toko online modern dengan sistem pembayaran digital.</p>
+    </div>
+    <div class="project-card">
+      <img src="company.jpg" alt="Project 2">
+      <h3>Company Profile</h3>
+      <p>Pembuatan website company profile untuk meningkatkan branding bisnis.</p>
+    </div>
+    <div class="project-card">
+      <img src="mobile.jpg" alt="Project 3">
+      <h3>Mobile App</h3>
+      <p>Aplikasi mobile berbasis Android untuk memudahkan pelanggan memesan produk.</p>
+    </div>
+  </div>
+</section>
+
+<section class="headquarters-section" id="profile">
+    <h2>Our Headquarter</h2>
+<div class="locations">
+  <div class="location">
+      <img src="jakarta.jpg" alt="Jakarta" class="location-icon" onclick="selectLocation(this, 'Jakarta')">
+      <span>Jakarta</span>
+  </div>
+  <div class="location">
+      <img src="bandung.jpg" alt="Bandung" class="location-icon" onclick="selectLocation(this, 'Bandung')">
+      <span>Bandung</span>
+  </div>
+  <div class="location">
+      <img src="surabaya.jpg" alt="Surabaya" class="location-icon" onclick="selectLocation(this, 'Surabaya')">
+      <span>Surabaya</span>
+  </div>
+</div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="contact-form">
+        <h2>Message Us</h2>
+        <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <!-- GANTI Package Level -> Service Type -->
+            <div class="form-group">
+                <label for="service">Service Type:</label>
+                <select id="service" name="service">
+                    <option value="website">Website Development</option>
+                    <option value="mobile">Mobile App Development</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="consultation">Consultation</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail Address:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </div>
+    <div class="contact-info"></div>
+</section>
+
+
+    <footer class="footer">
+        Created by Bagas.AP
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
